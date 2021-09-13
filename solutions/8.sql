@@ -9,3 +9,7 @@ VALUES ('Favorite Band Name');
 
 INSERT INTO albums (name, release_year, band_id)
 VALUES ('Favorite Album Name', 2000, 8);
+
+INSERT INTO albums (name, release_year, band_id) VALUES ('Maroon 5', 1999, 5);
+
+DELETE FROM albums WHERE band_id = 5;

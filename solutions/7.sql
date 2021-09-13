@@ -6,3 +6,7 @@
 UPDATE albums
 SET release_year = 1986
 WHERE id = 4;
+
+UPDATE albums SET release_year = 1986 WHERE 
+
+INSERT INTO albums (name, release_year) VALUES ('Maroon 5', 1999);
