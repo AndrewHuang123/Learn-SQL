@@ -15,5 +15,3 @@ WHERE id = 19;
 
 DELETE FROM bands
 WHERE id = 8;
-
-SELECT AVG(songs.length) AS 'Average Song Duration' FROM songs;

@@ -7,11 +7,3 @@ CREATE TABLE songs (
   FOREIGN KEY (album_id) REFERENCES albums(id)
 );
 
-SELECT bands.name AS 'Band Name' FROM bands;
-
-SELECT * FROM albums WHERE release_year IS NOT NULL ORDER BY release_year LIMIT 1;
-
-SELECT DISTINCT bands.name AS 'Band Name' FROM bands INNER JOIN albums ON bands.id = albums.band_id; 
-
-SELECT bands.name AS 'Band Name' FROM bands INNER JOIN albums ON bands.id = albums.band_id GROUP BY albums.band_id HAVING COUNT(albums.id = 0)
-

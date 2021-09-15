@@ -4,9 +4,6 @@ LEFT JOIN albums ON bands.id = albums.band_id
 GROUP BY albums.band_id
 HAVING COUNT(albums.id) = 0;
 
-SELECT bands.name AS 'Band Name' FROM bands LEFT JOIN albums ON bands.id = albums.band_id GROUP BY albums.band_id HAVING COUNT(albums.id = 0);
-SELECT bands.name AS 'Band Name' FROM bands LEFT JOIN albums ON bands.id = albums.band_id GROUP BY albums.band_id HAVING COUNT(albums.id = 0)
-
 SELECT
   albums.name AS Name
   albums.release_year AS 'Release Year'
